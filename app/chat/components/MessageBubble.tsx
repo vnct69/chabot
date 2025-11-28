@@ -15,11 +15,11 @@ export default function MessageBubble({ message }: Props) {
       <div
         className={`group relative max-w-[75%] px-4 py-3 rounded-2xl transition-all duration-200 ${
           isUser
-            ? "bg-gradient-to-br from-purple-600 to-blue-600 text-white rounded-br-none shadow-lg hover:shadow-xl"
+            ? "bg-linear-to-br from-blue-900 to-blue-600 text-white rounded-br-none shadow-lg hover:shadow-xl"
             : "bg-white/10 backdrop-blur-sm text-gray-100 rounded-bl-none border border-white/10 hover:bg-white/15"
         }`}
       >
-        <p className="text-sm leading-relaxed whitespace-pre-wrap break-words">
+        <p className="text-sm leading-relaxed whitespace-pre-wrap wrap-break-words">
           {message.content}
         </p>
         

@@ -53,7 +53,7 @@ export default function ChatInput({ onSend, disabled }: Props) {
           onKeyDown={handleKeyDown}
           disabled={disabled}
           rows={1}
-          className="w-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent resize-none transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           placeholder="Type your message..."
           style={{ minHeight: "48px", maxHeight: "150px" }}
         />
@@ -62,7 +62,7 @@ export default function ChatInput({ onSend, disabled }: Props) {
       <button
         type="submit"
         disabled={!content.trim() || disabled}
-        className="h-12 w-12 bg-gradient-to-br from-purple-600 to-blue-600 text-white rounded-xl hover:from-purple-700 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
+        className="h-12 w-12 bg-white/10 text-white rounded-xl hover:from-purple-700 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
       >
         {disabled ? (
           <Loader2 className="w-5 h-5 animate-spin" />

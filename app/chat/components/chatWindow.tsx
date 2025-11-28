@@ -64,7 +64,7 @@ export default function ChatWindow({ userId }: { userId?: string } = {}) {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-white font-medium">AI Assistant</span>
+            <span className="text-white font-medium">Chatbot Test</span>
           </div>
           <div className="text-gray-400 text-sm">
             {messages.length} messages
